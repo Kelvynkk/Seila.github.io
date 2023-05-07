@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Casal</title>
+</head>
+<body>
+	<h1>Descubra qual é o melhor casal q existe apenas digitando as iniciais dos seus nomes</h1>
+	<form>
+		<label for="nome1">primeira inicial:</label>
+		<input type="text" id="nome1" name="nome1"><br><br>
+		<label for="nome2">segunda inicial:</label>
+		<input type="text" id="nome2" name="nome2"><br><br>
+		<button type="button" onclick="verificaCasal()">Verificar</button>
+	</form>
+
+	<script>
+		function verificaCasal() {
+			var nome1 = document.getElementById("nome1").value;
+			var nome2 = document.getElementById("nome2").value;
+
+			if (nome1 == "K" && nome2 == "J") {
+				alert("Esse é o melhor casal que pode existir!");
+			}
+			else if (nome1 == "k" && nome2 == "j") {
+				alert("Esse é o melhor casal que pode existir!");
+			}
+			else if (nome1 == "K" && nome2 == "j") {
+				alert("Esse é o melhor casal que pode existir!");
+			}
+			else if (nome1 == "J" && nome2 == "K") {
+				alert("Esse é o melhor casal que pode existir!");
+			}
+			else if (nome1 == "j" && nome2 == "k") {
+				alert("Esse é o melhor casal que pode existir!");
+			}
+			else if (nome1 == "J" && nome2 == "k") {
+				alert("Esse é o melhor casal que pode existir!");
+			}
+			else {
+				alert("HAHAHA 🤣🤣🤣 essas não são as iniciais do melhor casal que pode existir HAHAHA");
+			}
+		}
+	</script>
+</body>
+</html>
